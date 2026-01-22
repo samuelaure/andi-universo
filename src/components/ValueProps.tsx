@@ -88,6 +88,12 @@ const ValueProps = () => {
           font-size: 1rem;
           line-height: 1.5;
         }
+        @media (max-width: 480px) {
+          .prop-card {
+            margin: 0 0.5rem;
+            padding: var(--space-sm);
+          }
+        }
       `}</style>
     </section>
   );

@@ -87,10 +87,21 @@ const Pricing = ({
 
         .pricing-grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
           gap: var(--space-md);
           align-items: stretch;
           margin-bottom: var(--space-lg);
+        }
+
+        @media (max-width: 480px) {
+          .pricing-grid {
+            grid-template-columns: 1fr;
+            gap: var(--space-sm);
+          }
+          .pricing-card {
+            padding: var(--space-md); /* Keep decent padding */
+            margin: 0 0.5rem; /* Add a bit of space from container edges */
+          }
         }
 
         .pricing-actions {

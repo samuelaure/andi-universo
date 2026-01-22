@@ -41,6 +41,12 @@ const SalesHero = () => {
           overflow: hidden;
         }
 
+        @media (max-width: 768px) {
+          .sales-hero {
+            padding: var(--space-lg) 0;
+          }
+        }
+
         .sales-hero-grid {
           display: grid;
           grid-template-columns: 1.2fr 0.8fr;
@@ -52,13 +58,14 @@ const SalesHero = () => {
           .sales-hero-grid {
             grid-template-columns: 1fr;
             text-align: center;
+            gap: var(--space-md);
           }
           .sales-hero-content {
             order: 2;
           }
           .sales-hero-image {
             order: 1;
-            margin-bottom: var(--space-md);
+            margin-bottom: var(--space-sm);
           }
         }
 
@@ -127,6 +134,13 @@ const SalesHero = () => {
           height: auto;
           display: block;
           transition: transform 0.5s ease;
+        }
+
+        @media (max-width: 992px) {
+          .image-frame {
+            margin: 0 1rem;
+            width: auto;
+          }
         }
 
         .image-frame:hover img {

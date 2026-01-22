@@ -41,6 +41,11 @@ const AboutAstrology = () => {
         @media (max-width: 768px) {
           .about-grid {
             grid-template-columns: 1fr;
+            text-align: center;
+          }
+          .icon-wrapper {
+            margin-left: auto;
+            margin-right: auto;
           }
         }
 
@@ -72,6 +77,13 @@ const AboutAstrology = () => {
           box-shadow: 0 20px 40px rgba(0,0,0,0.1);
           transform: rotate(2deg);
           margin: 0 auto;
+        }
+
+        @media (max-width: 480px) {
+          .decorative-box {
+            height: 300px;
+            width: 300px;
+          }
         }
 
         .about-image {

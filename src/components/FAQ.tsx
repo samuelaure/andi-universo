@@ -106,6 +106,16 @@ const FAQItem = ({ question, answer }: { question: string; answer: string }) => 
         .faq-item:hover {
           box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
+
+        @media (max-width: 480px) {
+          .faq-item {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+          }
+          .faq-question {
+            padding: var(--space-sm);
+          }
+        }
       `}</style>
     </div>
   );

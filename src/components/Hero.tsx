@@ -39,6 +39,13 @@ const Hero = () => {
           align-items: center;
         }
 
+        @media (max-width: 768px) {
+          .hero {
+            padding: var(--space-lg) 0;
+            min-height: auto;
+          }
+        }
+
         .hero-content {
           text-align: center;
           position: relative;
