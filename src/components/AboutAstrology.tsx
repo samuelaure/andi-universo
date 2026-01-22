@@ -20,9 +20,12 @@ const AboutAstrology = () => {
           </p>
         </div>
         <div className="about-image-placeholder">
-          {/* In a real scenario, we'd use an image here. I'll use a styled div with a subtle gradient */}
           <div className="decorative-box">
-            <span>Tu mapa personal</span>
+            <img
+              className="about-image"
+              src="/assets/astrology.jpg"
+              alt="Guía y contención para mamás"
+            />
           </div>
         </div>
       </div>
@@ -61,17 +64,28 @@ const AboutAstrology = () => {
 
         .decorative-box {
           height: 400px;
+          width: 400px;
+          max-width: 100%;
           background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
           border-radius: 30px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: var(--white);
-          font-family: var(--font-header);
-          font-size: 2rem;
-          font-weight: 700;
-          opacity: 0.8;
+          overflow: hidden;
+          box-shadow: 0 20px 40px rgba(0,0,0,0.1);
           transform: rotate(2deg);
+          margin: 0 auto;
+        }
+
+        .about-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          opacity: 0.9;
+          transition: var(--transition-smooth);
+        }
+
+        .decorative-box:hover .about-image {
+          transform: scale(1.05);
+          opacity: 1;
         }
       `}</style>
     </section>

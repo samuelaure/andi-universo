@@ -14,7 +14,7 @@ const AstrologiaPage = () => {
 
         <div id="servicios">
           <Pricing
-            title="Inicia tu viaja de autoconocimiento"
+            title="Inicia tu viaje de autoconocimiento"
             subtitle="Elige la sesión que mejor resuene con tu momento actual y comienza a construir una dinámica familiar más armoniosa."
           />
         </div>

@@ -66,15 +66,14 @@ const Pricing = ({
                 </li>
               ))}
             </ul>
-            <Link
-              to="/astrologia/sesion"
-              className={`btn ${plan.highlight ? 'btn-primary' : 'btn-accent'}`}
-              style={{ textAlign: 'center' }}
-            >
-              {plan.buttonText}
-            </Link>
           </div>
         ))}
+      </div>
+
+      <div className="pricing-actions">
+        <Link to="/astrologia/sesion" className="btn btn-primary btn-large">
+          Reservar mi Sesión
+        </Link>
       </div>
 
       <style>{`
@@ -91,6 +90,19 @@ const Pricing = ({
           grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
           gap: var(--space-md);
           align-items: stretch;
+          margin-bottom: var(--space-lg);
+        }
+
+        .pricing-actions {
+          display: flex;
+          justify-content: center;
+          margin-top: var(--space-md);
+        }
+
+        .btn-large {
+          padding: 1.2rem 3.5rem;
+          font-size: 1.2rem;
+          box-shadow: 0 15px 30px rgba(128, 43, 72, 0.15);
         }
 
         .pricing-card {
