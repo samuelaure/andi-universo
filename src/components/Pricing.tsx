@@ -1,5 +1,5 @@
 import { Check } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { useBooking } from '../context/BookingContext';
 
 interface PricingProps {
   title?: string;
@@ -10,6 +10,7 @@ const Pricing = ({
   title = 'Nuestras Sesiones',
   subtitle = 'Elige el camino que mejor se adapte a tu momento actual.',
 }: PricingProps) => {
+  const { openBooking } = useBooking();
   const plans = [
     {
       title: 'Sesión Única',
@@ -71,9 +72,9 @@ const Pricing = ({
       </div>
 
       <div className="pricing-actions">
-        <Link to="/astrologia/sesion" className="btn btn-primary btn-large">
+        <button onClick={openBooking} className="btn btn-primary btn-large">
           Reservar mi Sesión
-        </Link>
+        </button>
       </div>
 
       <style>{`

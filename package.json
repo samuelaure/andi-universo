@@ -1,7 +1,7 @@
 {
   "name": "andi-universo",
   "private": true,
-  "version": "0.4.2",
+  "version": "0.4.4",
   "type": "module",
   "author": "Samuel Aure",
   "scripts": {

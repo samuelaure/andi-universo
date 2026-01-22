@@ -3,8 +3,10 @@ import ValueProps from '../components/ValueProps';
 import Pricing from '../components/Pricing';
 import AboutAstrology from '../components/AboutAstrology';
 import FAQ from '../components/FAQ';
+import { useBooking } from '../context/BookingContext';
 
 const AstrologiaPage = () => {
+  const { openBooking } = useBooking();
   return (
     <div className="astrologia-page">
       <main>
@@ -36,9 +38,9 @@ const AstrologiaPage = () => {
             >
               Tu carta astral tiene las respuestas que has estado buscando.
             </p>
-            <a href="#servicios" className="btn btn-accent btn-large">
+            <button onClick={openBooking} className="btn btn-accent btn-large">
               Reservar mi Sesión
-            </a>
+            </button>
           </div>
         </div>
 

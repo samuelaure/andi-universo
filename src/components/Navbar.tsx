@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
+import { useBooking } from '../context/BookingContext';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const { openBooking } = useBooking();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,9 +25,9 @@ const Navbar = () => {
           <a href="#servicios">Sesiones</a>
           <a href="#sobre-mi">Sobre Mí</a>
           <a href="#faq">Preguntas</a>
-          <a href="#contacto" className="btn btn-primary nav-cta">
+          <button onClick={openBooking} className="btn btn-primary nav-cta">
             Reservar
-          </a>
+          </button>
         </div>
       </div>
 
