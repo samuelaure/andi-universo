@@ -3,7 +3,8 @@ import ValueProps from '../components/ValueProps';
 import Pricing from '../components/Pricing';
 import AboutAstrology from '../components/AboutAstrology';
 import FAQ from '../components/FAQ';
-import { useBooking } from '../context/BookingContext';
+import AnimatedSection from '../components/AnimatedSection';
+import { useBooking } from '../hooks/useBooking';
 
 const AstrologiaPage = () => {
   const { openBooking } = useBooking();
@@ -12,18 +13,24 @@ const AstrologiaPage = () => {
       <main>
         <SalesHero />
 
-        <ValueProps />
+        <AnimatedSection>
+          <ValueProps />
+        </AnimatedSection>
 
         <div id="servicios">
-          <Pricing
-            title="Inicia tu viaje de autoconocimiento"
-            subtitle="Elige la sesión que mejor resuene con tu momento actual y comienza a construir una dinámica familiar más armoniosa."
-          />
+          <AnimatedSection>
+            <Pricing
+              title="Inicia tu viaje de autoconocimiento"
+              subtitle="Elige la sesión que mejor resuene con tu momento actual y comienza a construir una dinámica familiar más armoniosa."
+            />
+          </AnimatedSection>
         </div>
 
-        <AboutAstrology />
+        <AnimatedSection>
+          <AboutAstrology />
+        </AnimatedSection>
 
-        <div className="cta-divider">
+        <AnimatedSection className="cta-divider">
           <div className="container cta-content">
             <h2 className="heading-md" style={{ color: 'white' }}>
               ¿Lista para dar el primer paso?
@@ -42,9 +49,11 @@ const AstrologiaPage = () => {
               Reservar mi Sesión
             </button>
           </div>
-        </div>
+        </AnimatedSection>
 
-        <FAQ />
+        <AnimatedSection>
+          <FAQ />
+        </AnimatedSection>
       </main>
 
       <footer className="astrologia-footer">

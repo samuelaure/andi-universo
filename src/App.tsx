@@ -1,18 +1,52 @@
+import { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import AstrologiaPage from './pages/AstrologiaPage';
-import { BookingProvider } from './context/BookingContext';
+import { BookingProvider } from './context/BookingProvider';
 import BookingModal from './components/BookingModal';
+
+const HomePage = lazy(() => import('./pages/HomePage'));
+const AstrologiaPage = lazy(() => import('./pages/AstrologiaPage'));
+
+const PageLoader = () => (
+  <div
+    style={{
+      height: '100vh',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: 'white',
+    }}
+  >
+    <div className="loader"></div>
+    <style>{`
+      .loader {
+        width: 48px;
+        height: 48px;
+        border: 5px solid var(--primary-color);
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+      }
+      @keyframes rotation {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    `}</style>
+  </div>
+);
 
 function App() {
   return (
     <BookingProvider>
       <Router>
         <div className="app">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/astrologia" element={<AstrologiaPage />} />
-          </Routes>
+          <Suspense fallback={<PageLoader />}>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/astrologia" element={<AstrologiaPage />} />
+            </Routes>
+          </Suspense>
           <BookingModal />
         </div>
       </Router>

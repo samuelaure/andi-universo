@@ -1,5 +1,5 @@
 import { X } from 'lucide-react';
-import { useBooking } from '../context/BookingContext';
+import { useBooking } from '../hooks/useBooking';
 
 const BOOKING_URL =
   'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2qg89L-AidvnYo-gBtG0TLnup4eIJxnBDzbnfi8beiiOaBJnssxay3PKsONdZItkx_Lf_7wWJV?gv=true';
@@ -10,8 +10,24 @@ const BookingModal = () => {
   if (!isBookingOpen) return null;
 
   return (
-    <div className="modal-overlay" onClick={closeBooking}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+    <div
+      className="modal-overlay"
+      onClick={closeBooking}
+      onKeyDown={(e) => {
+        if (e.key === 'Escape') {
+          closeBooking();
+        }
+      }}
+      role="button"
+      tabIndex={-1}
+      aria-label="Cerrar modal"
+    >
+      <div
+        className="modal-content"
+        onClick={(e) => e.stopPropagation()}
+        onKeyDown={(e) => e.stopPropagation()}
+        role="presentation"
+      >
         <button className="modal-close" onClick={closeBooking}>
           <X size={24} />
         </button>

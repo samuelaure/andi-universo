@@ -1,5 +1,5 @@
 import { Check } from 'lucide-react';
-import { useBooking } from '../context/BookingContext';
+import { useBooking } from '../hooks/useBooking';
 
 interface PricingProps {
   title?: string;

@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Pricing from '../components/Pricing';
 import AboutAstrology from '../components/AboutAstrology';
 import FAQ from '../components/FAQ';
+import AnimatedSection from '../components/AnimatedSection';
 
 const HomePage = () => {
   return (
@@ -10,9 +11,15 @@ const HomePage = () => {
       <Navbar />
       <main>
         <Hero />
-        <AboutAstrology />
-        <Pricing />
-        <FAQ />
+        <AnimatedSection>
+          <AboutAstrology />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Pricing />
+        </AnimatedSection>
+        <AnimatedSection>
+          <FAQ />
+        </AnimatedSection>
       </main>
       <footer className="footer section">
         <div className="container footer-content">

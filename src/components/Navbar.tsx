@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useBooking } from '../context/BookingContext';
+import { useBooking } from '../hooks/useBooking';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);

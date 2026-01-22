@@ -61,7 +61,18 @@ const FAQItem = ({ question, answer }: { question: string; answer: string }) => 
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={`faq-item ${isOpen ? 'open' : ''}`} onClick={() => setIsOpen(!isOpen)}>
+    <div
+      className={`faq-item ${isOpen ? 'open' : ''}`}
+      onClick={() => setIsOpen(!isOpen)}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          setIsOpen(!isOpen);
+        }
+      }}
+      role="button"
+      tabIndex={0}
+      aria-expanded={isOpen}
+    >
       <div className="faq-question">
         <span>{question}</span>
         {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
