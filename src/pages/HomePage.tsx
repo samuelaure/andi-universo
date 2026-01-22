@@ -5,30 +5,30 @@ import AboutAstrology from '../components/AboutAstrology';
 import FAQ from '../components/FAQ';
 
 const HomePage = () => {
-    return (
-        <>
-            <Navbar />
-            <main>
-                <Hero />
-                <AboutAstrology />
-                <Pricing />
-                <FAQ />
-            </main>
-            <footer className="footer section">
-                <div className="container footer-content">
-                    <div className="footer-info">
-                        <h3 className="logo-text">
-                            Andi<span className="text-accent">Universo</span>
-                        </h3>
-                        <p>© {new Date().getFullYear()} Samuel Aure. Todos los derechos reservados.</p>
-                    </div>
-                    <div className="footer-links">
-                        <p>Astrología Evolutiva para la Crianza</p>
-                    </div>
-                </div>
-            </footer>
+  return (
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <AboutAstrology />
+        <Pricing />
+        <FAQ />
+      </main>
+      <footer className="footer section">
+        <div className="container footer-content">
+          <div className="footer-info">
+            <h3 className="logo-text">
+              Andi<span className="text-accent">Universo</span>
+            </h3>
+            <p>© {new Date().getFullYear()} Samuel Aure. Todos los derechos reservados.</p>
+          </div>
+          <div className="footer-links">
+            <p>Astrología Evolutiva para la Crianza</p>
+          </div>
+        </div>
+      </footer>
 
-            <style>{`
+      <style>{`
         .footer {
           background: var(--text-color);
           color: var(--white);
@@ -58,8 +58,8 @@ const HomePage = () => {
           }
         }
       `}</style>
-        </>
-    );
+    </>
+  );
 };
 
 export default HomePage;

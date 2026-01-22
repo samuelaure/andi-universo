@@ -1,6 +1,15 @@
 import { Check } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
-const Pricing = () => {
+interface PricingProps {
+  title?: string;
+  subtitle?: string;
+}
+
+const Pricing = ({
+  title = 'Nuestras Sesiones',
+  subtitle = 'Elige el camino que mejor se adapte a tu momento actual.',
+}: PricingProps) => {
   const plans = [
     {
       title: 'Sesión Única',
@@ -34,9 +43,9 @@ const Pricing = () => {
 
   return (
     <section id="servicios" className="section container">
-      <div style={{ textAlign: 'center', marginBottom: 'var(--space-lg)' }}>
-        <h2 className="heading-md">Nuestras Sesiones</h2>
-        <p className="text-muted">Elige el camino que mejor se adapte a tu momento actual.</p>
+      <div className="pricing-header">
+        <h2 className="heading-md">{title}</h2>
+        <p className="text-muted">{subtitle}</p>
       </div>
 
       <div className="pricing-grid">
@@ -57,14 +66,26 @@ const Pricing = () => {
                 </li>
               ))}
             </ul>
-            <button className={`btn ${plan.highlight ? 'btn-primary' : 'btn-accent'}`}>
+            <Link
+              to="/astrologia/sesion"
+              className={`btn ${plan.highlight ? 'btn-primary' : 'btn-accent'}`}
+              style={{ textAlign: 'center' }}
+            >
               {plan.buttonText}
-            </button>
+            </Link>
           </div>
         ))}
       </div>
 
       <style>{`
+        .pricing-header {
+          text-align: center; 
+          margin-bottom: var(--space-lg);
+          max-width: 800px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
         .pricing-grid {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -140,6 +161,7 @@ const Pricing = () => {
           margin-bottom: var(--space-md);
           font-weight: 500;
           color: var(--text-color);
+          min-height: 3em;
         }
 
         .feature-list {
