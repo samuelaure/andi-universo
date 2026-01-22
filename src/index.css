@@ -1,0 +1,57 @@
+@import './styles/variables.css';
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.section {
+  padding: var(--space-xl) 0;
+}
+
+.heading-lg {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  margin-bottom: var(--space-md);
+}
+
+.heading-md {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  margin-bottom: var(--space-sm);
+}
+
+.text-muted {
+  opacity: 0.8;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: var(--transition-smooth);
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(128, 43, 72, 0.2);
+  filter: brightness(1.1);
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
