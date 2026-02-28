@@ -5,6 +5,7 @@ import BookingModal from './components/BookingModal';
 
 const HomePage = lazy(() => import('./pages/HomePage'));
 const AstrologiaPage = lazy(() => import('./pages/AstrologiaPage'));
+const PergaminosPage = lazy(() => import('./pages/PergaminosPage'));
 
 const PageLoader = () => (
   <div
@@ -45,6 +46,7 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/astrologia" element={<AstrologiaPage />} />
+              <Route path="/pergaminos" element={<PergaminosPage />} />
             </Routes>
           </Suspense>
           <BookingModal />
