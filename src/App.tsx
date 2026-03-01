@@ -2,10 +2,16 @@ import { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { BookingProvider } from './context/BookingProvider';
 import BookingModal from './components/BookingModal';
+import Footer from './components/Footer';
 
 const HomePage = lazy(() => import('./pages/HomePage'));
 const AstrologiaPage = lazy(() => import('./pages/AstrologiaPage'));
 const PergaminosPage = lazy(() => import('./pages/PergaminosPage'));
+const HDSesionPage = lazy(() => import('./pages/HumanDesignSesionPage'));
+const AstrologiaHub = lazy(() => import('./pages/AstrologiaHubPage'));
+const HDHub = lazy(() => import('./pages/HumanDesignHubPage'));
+const FamiliaHub = lazy(() => import('./pages/FamiliaHubPage'));
+const BioHub = lazy(() => import('./pages/BioHubPage'));
 
 const PageLoader = () => (
   <div
@@ -45,10 +51,16 @@ function App() {
           <Suspense fallback={<PageLoader />}>
             <Routes>
               <Route path="/" element={<HomePage />} />
-              <Route path="/astrologia" element={<AstrologiaPage />} />
+              <Route path="/astrologia" element={<AstrologiaHub />} />
+              <Route path="/astrologia/sesion" element={<AstrologiaPage />} />
               <Route path="/pergaminos" element={<PergaminosPage />} />
+              <Route path="/human-design" element={<HDHub />} />
+              <Route path="/human-design/sesion" element={<HDSesionPage />} />
+              <Route path="/familia" element={<FamiliaHub />} />
+              <Route path="/bio" element={<BioHub />} />
             </Routes>
           </Suspense>
+          <Footer />
           <BookingModal />
         </div>
       </Router>
