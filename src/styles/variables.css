@@ -16,20 +16,19 @@
   --space-sm: 1rem;
   --space-md: 2rem;
   --space-lg: 4rem;
-  --space-xl: 8rem;
-
-  /* Mobile Overrides (simplified approach) */
-  --safe-padding: 1.5rem;
+  --space-xl: 6rem;
+  --space-xxl: 10rem;
 
   /* Transitions */
-  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (max-width: 768px) {
   :root {
     --space-md: 1.5rem;
-    --space-lg: 3rem;
+    --space-lg: 2.5rem;
     --space-xl: 4rem;
+    --space-xxl: 6rem;
   }
 }
 

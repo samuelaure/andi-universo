@@ -6,21 +6,18 @@ const Hero = () => {
       <div className="container hero-content">
         <div className="hero-badge">
           <Stars size={16} />
-          <span>Astrología para una Crianza Consciente</span>
+          <span>Acompañamiento Evolutivo para Madres</span>
         </div>
         <h1 className="heading-lg">
           Comprende tu <span className="text-primary">luz</span>, abraza tu camino familiar.
         </h1>
         <p className="hero-subtitle">
-          Descubre en tu carta astral las herramientas para criar con más claridad, compasión y
-          propósito. Un viaje de autoconocimiento diseñado para madres.
+          Un espacio sagrado de escucha y guía donde tú eres la protagonista.
+          Te acompaño a integrar tu naturaleza única para transformar tu experiencia de mujer y madre.
         </p>
         <div className="hero-actions">
-          <a href="#servicios" className="btn btn-primary">
-            Ver Sesiones
-          </a>
-          <a href="#sobre-mi" className="btn btn-outline">
-            ¿Qué es esto?
+          <a href="#sobre-mi" className="btn btn-primary">
+            Mi Propuesta
           </a>
         </div>
       </div>
@@ -32,17 +29,17 @@ const Hero = () => {
       <style>{`
         .hero {
           position: relative;
-          padding: var(--space-xl) 0 var(--space-lg);
           overflow: hidden;
-          min-height: 80vh;
+          height: 100vh;
           display: flex;
           align-items: center;
+          justify-content: center;
+          background-color: var(--bg-color);
         }
 
         @media (max-width: 768px) {
           .hero {
-            padding: var(--space-lg) 0;
-            min-height: auto;
+            height: 100vh; /* Keep it full screen on mobile as requested */
           }
         }
 

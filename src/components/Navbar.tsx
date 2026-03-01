@@ -99,8 +99,15 @@ const Navbar = () => {
         }
 
         @media (max-width: 768px) {
-          .nav-links {
-            display: none; /* Simplification for now, mobile menu would be next */
+          .nav-links a:not(.btn) {
+            display: none;
+          }
+          .nav-cta {
+            padding: 10px 16px;
+            font-size: 0.85rem;
+          }
+          .logo-text {
+            font-size: 1.2rem;
           }
         }
       `}</style>
