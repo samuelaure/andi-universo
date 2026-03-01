@@ -12,7 +12,7 @@ const ValueProps = () => {
       icon: <ShieldCheck size={32} />,
       title: 'Sin Etiquetas',
       description:
-        'La astrología evolutiva no encasilla; libera potenciales para que seas la madre que deseas ser.',
+        'Mi enfoque no te encasilla ni te limita; te ofrece claridad para que seas la mujer y madre que auténticamente eres.',
     },
     {
       icon: <Sparkles size={32} />,
@@ -29,7 +29,7 @@ const ValueProps = () => {
   ];
 
   return (
-    <section className="section-small" style={{ backgroundColor: 'white' }}>
+    <section className="section-small">
       <div className="container">
         <div className="props-grid">
           {props.map((prop, index) => (

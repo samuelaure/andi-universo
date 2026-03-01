@@ -7,43 +7,42 @@ interface PricingProps {
 }
 
 const Pricing = ({
-  title = 'Nuestras Sesiones',
-  subtitle = 'Elige el camino que mejor se adapte a tu momento actual.',
+  title = 'Propuestas de Acompañamiento',
+  subtitle = 'Espacios diseñados para tu evolución personal y armonía familiar.',
 }: PricingProps) => {
   const { openBooking } = useBooking();
   const plans = [
     {
-      title: 'Sesión Única',
+      title: 'Sesión de Claridad',
       price: '€90',
       offer: 'Primera sesión €30',
-      description: 'Lectura profunda y personalizada de tu carta astral (mamá).',
+      description: 'Un encuentro profundo centrado en tu momento actual y tus necesidades.',
       features: [
-        'Enfoque práctico para comprender tu camino personal y maternal.',
-        'Orientación sobre patrones, desafíos y herramientas para criar con más claridad y compasión.',
-        'Espacio seguro para validar tus emociones y procesos.',
-        'Sugerencias simples adaptadas a tu realidad, nada genérico.',
+        'Espacio seguro de escucha, contención y guía profesional.',
+        'Análisis técnico de tu naturaleza única (Astrología o Diseño Humano).',
+        'Herramientas prácticas para integrar en tu día a día familiar.',
+        'Identificación de patrones y bloqueos que afectan tu bienestar.',
       ],
       buttonText: 'Agendar Sesión',
       highlight: false,
     },
     {
-      title: 'Plan Familiar',
+      title: 'Acompañamiento Familiar',
       price: '€270',
-      description: 'Lectura completa del núcleo familiar: mamá, pareja e hijos.',
+      description: 'Transformación profunda de la dinámica y el orden de tu hogar.',
       features: [
-        'Análisis de vínculos, dinámicas, retos y talentos colectivos desde la carta de cada miembro.',
-        'Comprensión de los puntos de encuentro y diferencia entre cada integrante.',
-        'Estrategias para fortalecer la convivencia y la comunicación en casa.',
-        'Guía para abordar desafíos recurrentes (distancias emocionales, rencores, celos, etc) desde la raíz.',
-        'Espacio íntimo de contención para cada momento de la crianza y la vida familiar.',
+        'Análisis integral de los vínculos y energías de todo el núcleo familiar.',
+        'Estrategias personalizadas para reducir la fricción y mejorar la comunicación.',
+        'Guía para acompañar la naturaleza de tus hijos desde la comprensión real.',
+        'Soporte continuado para asentar los cambios y el nuevo orden familiar.',
       ],
-      buttonText: 'Agendar Plan Familiar',
+      buttonText: 'Agendar Acompañamiento',
       highlight: true,
     },
   ];
 
   return (
-    <section id="servicios" className="section container">
+    <section id="pricing" className="section container">
       <div className="pricing-header">
         <h2 className="heading-md">{title}</h2>
         <p className="text-muted">{subtitle}</p>

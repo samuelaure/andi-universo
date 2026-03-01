@@ -19,7 +19,7 @@ const PergaminosPage = () => {
         {
             question: '¿Necesito conocimientos de Diseño Humano o Astrología?',
             answer:
-                'Para nada. Mi trabajo es traducir esos sistemas complejos a un lenguaje cotidiano, directo y práctico. Tú solo recibes las instrucciones de funcionamiento de tu familia en &quot;idioma humano&quot;.',
+                'Para nada. Mi trabajo es traducir esos sistemas complejos a un lenguaje cotidiano, directo y práctico. Tú solo recibes las instrucciones de funcionamiento de tu familia en "idioma humano".',
         },
         {
             question: '¿Qué pasa si mis hijos son muy pequeños?',
@@ -29,7 +29,7 @@ const PergaminosPage = () => {
         {
             question: '¿Y si mi pareja no está muy convencida?',
             answer:
-                'Los pergaminos no requieren &quot;creencia&quot;. Son mapas lógicos de cómo funcionamos. Incluso si solo tú los usas para entender cómo relacionarte con ellos, la dinámica familiar cambiará porque tú dejarás de forzar engranajes que no encajan.',
+                'Los pergaminos no requieren "creencia". Son mapas lógicos de cómo funcionamos. Incluso si solo tú los usas para entender cómo relacionarte con ellos, la dinámica familiar cambiará porque tú dejarás de forzar engranajes que no encajan.',
         },
     ];
 
@@ -129,7 +129,7 @@ const PergaminosPage = () => {
                                 <ul>
                                     <li>Reforzar su carácter y su derecho a ser quien es.</li>
                                     <li>Alinear comportamiento y decisiones diarias con esa naturaleza.</li>
-                                    <li>Quitar culpa, exigencia inútil y esa sensación de que &quot;algo falta&quot;.</li>
+                                    <li>Quitar culpa, exigencia inútil y esa sensación de que "algo falta".</li>
                                 </ul>
                             </AnimatedSection>
 
@@ -171,7 +171,7 @@ const PergaminosPage = () => {
                             <p className="large-text">
                                 Trabajo con el diseño humano y la astrología como materia prima, no como creencia.
                                 Lo traduzco en palabras simples, directas y orientadas a la vida cotidiana de tu
-                                familia. No es necesario que &quot;creas en nada&quot;:
+                                familia. No es necesario que "creas en nada":
                             </p>
                             <div className="highlight-box">
                                 Aquí sólo importa que las palabras reflejen la verdad relacional y la puedas usar.
@@ -261,8 +261,8 @@ const PergaminosPage = () => {
                         <AnimatedSection>
                             <div className="closure-content">
                                 <p className="closure-p">
-                                    &quot;Una familia alineada no tiene que esforzarse tanto para entenderse; solo necesita
-                                    verse y corresponderse desde la verdad de cada quien.&quot;
+                                    "Una familia alineada no tiene que esforzarse tanto para entenderse; solo necesita
+                                    verse y corresponderse desde la verdad de cada quien."
                                 </p>
                                 <p className="closure-sub">
                                     Estos pergaminos son el principio real de ese nuevo orden.
@@ -272,12 +272,6 @@ const PergaminosPage = () => {
                     </div>
                 </section>
             </main>
-
-            <footer className="astrologia-footer">
-                <div className="container">
-                    <p>© {new Date().getFullYear()} Andi Universo | Astrología Evolutiva para Madres</p>
-                </div>
-            </footer>
 
             <style>{`
         .pergaminos-page {
@@ -324,9 +318,19 @@ const PergaminosPage = () => {
         }
 
         .hero-btn {
-          font-size: 1.3rem;
-          padding: 1.2rem 3rem;
+          font-size: 1.1rem;
+          padding: 1.1rem 2rem;
           box-shadow: 0 10px 30px rgba(225, 162, 57, 0.4);
+          width: 100%;
+          max-width: 400px;
+        }
+
+        @media (min-width: 768px) {
+          .hero-btn {
+            font-size: 1.3rem;
+            padding: 1.2rem 3rem;
+            width: auto;
+          }
         }
 
         /* TRANSFORMACION */
@@ -354,10 +358,16 @@ const PergaminosPage = () => {
         .transform-card {
           background: white;
           border-radius: 20px;
-          padding: var(--space-md);
+          padding: 1.5rem;
           box-shadow: 0 10px 30px rgba(0,0,0,0.05);
           position: relative;
           border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        @media (min-width: 768px) {
+          .transform-card {
+            padding: var(--space-md);
+          }
         }
 
         .card-badge {
@@ -519,14 +529,22 @@ const PergaminosPage = () => {
           position: relative;
         }
         .highlight-box::before {
-          content: '"';
+          content: '“';
           position: absolute;
-          top: -20px;
-          left: 20px;
-          font-size: 5rem;
+          top: -10px;
+          left: 10px;
+          font-size: 4rem;
           color: var(--cream-pink);
           font-family: serif;
           opacity: 0.5;
+          line-height: 1;
+        }
+        @media (min-width: 768px) {
+          .highlight-box::before {
+            top: -20px;
+            left: 20px;
+            font-size: 5rem;
+          }
         }
 
         /* AUDIENCE SECTION */
@@ -645,13 +663,18 @@ const PergaminosPage = () => {
           justify-content: center;
         }
         .final-btn {
-          align-self: flex-start;
+          align-self: center;
           margin-top: 2rem;
           margin-bottom: 2rem;
-          font-size: 1.2rem;
+          font-size: 1.1rem;
+          width: 100%;
         }
-        @media (max-width: 768px) {
-          .final-btn { align-self: stretch; text-align: center; }
+        @media (min-width: 768px) {
+          .final-btn {
+            align-self: flex-start;
+            font-size: 1.2rem;
+            width: auto;
+          }
         }
         .investment-note {
           font-size: 1.1rem;
@@ -708,26 +731,20 @@ const PergaminosPage = () => {
         }
         .closure-p {
           font-family: var(--font-header);
-          font-size: clamp(1.5rem, 4vw, 2.5rem);
+          font-size: clamp(1.4rem, 4.5vw, 2.5rem);
           line-height: 1.4;
           margin-bottom: 1.5rem;
           color: var(--cream-pink);
+          padding: 0 1rem;
         }
         .closure-sub {
           font-size: 1.2rem;
           opacity: 0.8;
         }
-
-        .astrologia-footer {
-          padding: var(--space-md) 0;
-          text-align: center;
-          background: #3a1320;
-          color: white;
-          opacity: 0.8;
-          font-size: 0.9rem;
-        }
+}
       `}</style>
         </div>
     );
 };
+
 export default PergaminosPage;
