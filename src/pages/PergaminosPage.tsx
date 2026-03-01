@@ -3,277 +3,277 @@ import GenericFAQ from '../components/GenericFAQ';
 import { useBooking } from '../hooks/useBooking';
 
 const PergaminosPage = () => {
-    const { openBooking } = useBooking();
+  const { openBooking } = useBooking();
 
-    const faqHome = [
-        {
-            question: '¿Qué recibo exactamente con el sistema de pergaminos?',
-            answer:
-                'Recibes un conjunto de documentos digitales personalizados: un pergamino de identidad por cada miembro de la familia y un pergamino vinculado por cada relación clave dentro del núcleo. Todo está diseñado para ser impreso y usado como guía de convivencia.',
-        },
-        {
-            question: '¿Cuánto tiempo tarda la entrega?',
-            answer:
-                'Al ser un trabajo artesanal que requiere el análisis de las naturalezas de cada miembro y sus interacciones, el tiempo de entrega suele ser de 7 a 10 días hábiles tras recibir la información necesaria.',
-        },
-        {
-            question: '¿Necesito conocimientos de Diseño Humano o Astrología?',
-            answer:
-                'Para nada. Mi trabajo es traducir esos sistemas complejos a un lenguaje cotidiano, directo y práctico. Tú solo recibes las instrucciones de funcionamiento de tu familia en "idioma humano".',
-        },
-        {
-            question: '¿Qué pasa si mis hijos son muy pequeños?',
-            answer:
-                'Es el momento ideal. Los pergaminos te darán el manual de instrucciones para acompañar su naturaleza desde el inicio, evitando imponerles formas de ser que no les corresponden y ahorrándote años de resistencia.',
-        },
-        {
-            question: '¿Y si mi pareja no está muy convencida?',
-            answer:
-                'Los pergaminos no requieren "creencia". Son mapas lógicos de cómo funcionamos. Incluso si solo tú los usas para entender cómo relacionarte con ellos, la dinámica familiar cambiará porque tú dejarás de forzar engranajes que no encajan.',
-        },
-    ];
+  const faqHome = [
+    {
+      question: '¿Qué recibo exactamente con el sistema de pergaminos?',
+      answer:
+        'Recibes un conjunto de documentos digitales personalizados: un pergamino de identidad por cada miembro de la familia y un pergamino vinculado por cada relación clave dentro del núcleo. Todo está diseñado para ser impreso y usado como guía de convivencia.',
+    },
+    {
+      question: '¿Cuánto tiempo tarda la entrega?',
+      answer:
+        'Al ser un trabajo artesanal que requiere el análisis de las naturalezas de cada miembro y sus interacciones, el tiempo de entrega suele ser de 7 a 10 días hábiles tras recibir la información necesaria.',
+    },
+    {
+      question: '¿Necesito conocimientos de Diseño Humano o Astrología?',
+      answer:
+        'Para nada. Mi trabajo es traducir esos sistemas complejos a un lenguaje cotidiano, directo y práctico. Tú solo recibes las instrucciones de funcionamiento de tu familia en "idioma humano".',
+    },
+    {
+      question: '¿Qué pasa si mis hijos son muy pequeños?',
+      answer:
+        'Es el momento ideal. Los pergaminos te darán el manual de instrucciones para acompañar su naturaleza desde el inicio, evitando imponerles formas de ser que no les corresponden y ahorrándote años de resistencia.',
+    },
+    {
+      question: '¿Y si mi pareja no está muy convencida?',
+      answer:
+        'Los pergaminos no requieren "creencia". Son mapas lógicos de cómo funcionamos. Incluso si solo tú los usas para entender cómo relacionarte con ellos, la dinámica familiar cambiará porque tú dejarás de forzar engranajes que no encajan.',
+    },
+  ];
 
-    return (
-        <div className="pergaminos-page">
-            <main>
-                {/* HERO SECTION */}
-                <section className="pergaminos-hero">
-                    <div className="container hero-content">
-                        <AnimatedSection>
-                            <h1 className="heading-lg text-glow">Pergaminos Familiares</h1>
-                            <p className="hero-promise">
-                                Imagina una familia donde cada quien sabe, sin confusión ni desgaste, quién es, cómo
-                                funciona y cómo puede relacionarse con el otro desde ese lugar. No más amor lleno de
-                                malentendidos, ni expectativas silenciosas que duelen. Aquí el cariño se expresa y
-                                se sostiene en claridad. Eso es lo que te traen estos pergaminos: una base estable,
-                                escrita y replicable para convivir con menos fricción y mucho más sostén.
-                            </p>
-                            <button onClick={openBooking} className="btn btn-accent btn-large hero-btn">
-                                Quiero el sistema completo para mi familia
-                            </button>
-                        </AnimatedSection>
-                    </div>
-                    <div className="hero-overlay"></div>
-                </section>
+  return (
+    <div className="pergaminos-page">
+      <main>
+        {/* HERO SECTION */}
+        <section className="pergaminos-hero">
+          <div className="container hero-content">
+            <AnimatedSection>
+              <h1 className="heading-lg text-glow">Pergaminos Familiares</h1>
+              <p className="hero-promise">
+                Imagina una familia donde cada quien sabe, sin confusión ni desgaste, quién es, cómo
+                funciona y cómo puede relacionarse con el otro desde ese lugar. No más amor lleno de
+                malentendidos, ni expectativas silenciosas que duelen. Aquí el cariño se expresa y
+                se sostiene en claridad. Eso es lo que te traen estos pergaminos: una base estable,
+                escrita y replicable para convivir con menos fricción y mucho más sostén.
+              </p>
+              <button onClick={openBooking} className="btn btn-accent btn-large hero-btn">
+                Quiero el sistema completo para mi familia
+              </button>
+            </AnimatedSection>
+          </div>
+          <div className="hero-overlay"></div>
+        </section>
 
-                {/* TRANSFORMACIÓN SECTION */}
-                <section className="section bg-light">
-                    <div className="container">
-                        <AnimatedSection>
-                            <div className="transform-header">
-                                <h2 className="heading-md px-1 text-center">Una Transformación Estructural</h2>
-                                <p className="subtitle text-center">
-                                    Esta transformación no es emocional. Es estructural. Ordena la convivencia desde
-                                    la raíz.
-                                </p>
-                            </div>
-                        </AnimatedSection>
+        {/* TRANSFORMACIÓN SECTION */}
+        <section className="section bg-light">
+          <div className="container">
+            <AnimatedSection>
+              <div className="transform-header">
+                <h2 className="heading-md px-1 text-center">Una Transformación Estructural</h2>
+                <p className="subtitle text-center">
+                  Esta transformación no es emocional. Es estructural. Ordena la convivencia desde
+                  la raíz.
+                </p>
+              </div>
+            </AnimatedSection>
 
-                        <div className="transform-grid">
-                            <AnimatedSection delay={0.2} className="transform-card before-card">
-                                <div className="card-badge">Antes</div>
-                                <ul className="transform-list">
-                                    <li>Se aman, pero terminan haciéndose daño sin querer.</li>
-                                    <li>Se acompañan, pero se sienten solos en la incomprensión.</li>
-                                    <li>
-                                        Se esfuerzan por mejorar el ambiente familiar, pero todo se siente improvisado y
-                                        agotador.
-                                    </li>
-                                    <li>
-                                        Cada uno pone su voluntad, pero faltan referencias claras para entender y
-                                        decidir juntos.
-                                    </li>
-                                </ul>
-                            </AnimatedSection>
+            <div className="transform-grid">
+              <AnimatedSection delay={0.2} className="transform-card before-card">
+                <div className="card-badge">Antes</div>
+                <ul className="transform-list">
+                  <li>Se aman, pero terminan haciéndose daño sin querer.</li>
+                  <li>Se acompañan, pero se sienten solos en la incomprensión.</li>
+                  <li>
+                    Se esfuerzan por mejorar el ambiente familiar, pero todo se siente improvisado y
+                    agotador.
+                  </li>
+                  <li>
+                    Cada uno pone su voluntad, pero faltan referencias claras para entender y
+                    decidir juntos.
+                  </li>
+                </ul>
+              </AnimatedSection>
 
-                            <AnimatedSection delay={0.4} className="transform-card after-card">
-                                <div className="card-badge after-badge">Después</div>
-                                <ul className="transform-list">
-                                    <li>
-                                        Cada miembro de la familia puede reconocerse, y ser reconocido, en lo que es y
-                                        en lo que no es.
-                                    </li>
-                                    <li>
-                                        Cada vínculo tiene un espacio y un lenguaje propio para funcionar sin desgaste.
-                                    </li>
-                                    <li>
-                                        La comunicación se hace simple y comprensible porque ahora hay acuerdos claros,
-                                        no solo intenciones.
-                                    </li>
-                                    <li>
-                                        La familia deja de ser un lugar de tensión escondida y se vuelve un núcleo real
-                                        de sostén, desarrollo y calma.
-                                    </li>
-                                </ul>
-                            </AnimatedSection>
-                        </div>
-                    </div>
-                </section>
+              <AnimatedSection delay={0.4} className="transform-card after-card">
+                <div className="card-badge after-badge">Después</div>
+                <ul className="transform-list">
+                  <li>
+                    Cada miembro de la familia puede reconocerse, y ser reconocido, en lo que es y
+                    en lo que no es.
+                  </li>
+                  <li>
+                    Cada vínculo tiene un espacio y un lenguaje propio para funcionar sin desgaste.
+                  </li>
+                  <li>
+                    La comunicación se hace simple y comprensible porque ahora hay acuerdos claros,
+                    no solo intenciones.
+                  </li>
+                  <li>
+                    La familia deja de ser un lugar de tensión escondida y se vuelve un núcleo real
+                    de sostén, desarrollo y calma.
+                  </li>
+                </ul>
+              </AnimatedSection>
+            </div>
+          </div>
+        </section>
 
-                {/* QUÉ ES ESTE PRODUCTO */}
-                <section className="section product-section">
-                    <div className="container">
-                        <AnimatedSection>
-                            <h2 className="heading-md text-center text-white">¿Qué es este producto?</h2>
-                            <p className="subtitle text-center text-white" style={{ marginBottom: '3rem' }}>
-                                Un sistema de pergaminos escritos, personalizados, construidos para tu familia, que
-                                dejan por escrito:
-                            </p>
-                        </AnimatedSection>
+        {/* QUÉ ES ESTE PRODUCTO */}
+        <section className="section product-section">
+          <div className="container">
+            <AnimatedSection>
+              <h2 className="heading-md text-center text-white">¿Qué es este producto?</h2>
+              <p className="subtitle text-center text-white" style={{ marginBottom: '3rem' }}>
+                Un sistema de pergaminos escritos, personalizados, construidos para tu familia, que
+                dejan por escrito:
+              </p>
+            </AnimatedSection>
 
-                        <div className="features-grid">
-                            <AnimatedSection delay={0.1} className="feature-item">
-                                <div className="feature-icon">1</div>
-                                <h3>La identidad de cada miembro</h3>
-                                <p>Recibes un pergamino personal para cada integrante, pensado para:</p>
-                                <ul>
-                                    <li>Reforzar su carácter y su derecho a ser quien es.</li>
-                                    <li>Alinear comportamiento y decisiones diarias con esa naturaleza.</li>
-                                    <li>Quitar culpa, exigencia inútil y esa sensación de que "algo falta".</li>
-                                </ul>
-                            </AnimatedSection>
+            <div className="features-grid">
+              <AnimatedSection delay={0.1} className="feature-item">
+                <div className="feature-icon">1</div>
+                <h3>La identidad de cada miembro</h3>
+                <p>Recibes un pergamino personal para cada integrante, pensado para:</p>
+                <ul>
+                  <li>Reforzar su carácter y su derecho a ser quien es.</li>
+                  <li>Alinear comportamiento y decisiones diarias con esa naturaleza.</li>
+                  <li>Quitar culpa, exigencia inútil y esa sensación de que &quot;algo falta&quot;.</li>
+                </ul>
+              </AnimatedSection>
 
-                            <AnimatedSection delay={0.3} className="feature-item">
-                                <div className="feature-icon">2</div>
-                                <h3>La forma sana de relacionarse</h3>
-                                <p>
-                                    Un texto para cada vínculo (madre→hijo, hijo→madre, pareja, hermanos). Cada uno
-                                    está escrito intencionalmente para que encaje y corresponda con el del otro:
-                                </p>
-                                <ul>
-                                    <li>Sin contradicciones.</li>
-                                    <li>Sin dobles mensajes.</li>
-                                    <li>Sin frases genéricas.</li>
-                                </ul>
-                            </AnimatedSection>
+              <AnimatedSection delay={0.3} className="feature-item">
+                <div className="feature-icon">2</div>
+                <h3>La forma sana de relacionarse</h3>
+                <p>
+                  Un texto para cada vínculo (madre→hijo, hijo→madre, pareja, hermanos). Cada uno
+                  está escrito intencionalmente para que encaje y corresponda con el del otro:
+                </p>
+                <ul>
+                  <li>Sin contradicciones.</li>
+                  <li>Sin dobles mensajes.</li>
+                  <li>Sin frases genéricas.</li>
+                </ul>
+              </AnimatedSection>
 
-                            <AnimatedSection delay={0.5} className="feature-item">
-                                <div className="feature-icon">3</div>
-                                <h3>Un lenguaje que se instala y ordena</h3>
-                                <p>
-                                    Estos no se leen una vez y se olvidan. Se usan como anclaje diario, como
-                                    recordatorio y como una guía viva para convivir mejor.
-                                </p>
-                                <div className="feature-highlight">
-                                    No es inspiración. No es terapia. Es verte y ver al otro sin suposiciones, con un
-                                    mapa real y repetible.
-                                </div>
-                            </AnimatedSection>
-                        </div>
-                    </div>
-                </section>
+              <AnimatedSection delay={0.5} className="feature-item">
+                <div className="feature-icon">3</div>
+                <h3>Un lenguaje que se instala y ordena</h3>
+                <p>
+                  Estos no se leen una vez y se olvidan. Se usan como anclaje diario, como
+                  recordatorio y como una guía viva para convivir mejor.
+                </p>
+                <div className="feature-highlight">
+                  No es inspiración. No es terapia. Es verte y ver al otro sin suposiciones, con un
+                  mapa real y repetible.
+                </div>
+              </AnimatedSection>
+            </div>
+          </div>
+        </section>
 
-                {/* CÓMO LO CREO */}
-                <section className="section creation-section">
-                    <div className="container creation-container">
-                        <AnimatedSection className="creation-content">
-                            <h2 className="heading-md">¿Cómo lo creo?</h2>
-                            <p className="large-text">
-                                Trabajo con el diseño humano y la astrología como materia prima, no como creencia.
-                                Lo traduzco en palabras simples, directas y orientadas a la vida cotidiana de tu
-                                familia. No es necesario que "creas en nada":
-                            </p>
-                            <div className="highlight-box">
-                                Aquí sólo importa que las palabras reflejen la verdad relacional y la puedas usar.
-                            </div>
-                        </AnimatedSection>
-                    </div>
-                </section>
+        {/* CÓMO LO CREO */}
+        <section className="section creation-section">
+          <div className="container creation-container">
+            <AnimatedSection className="creation-content">
+              <h2 className="heading-md">¿Cómo lo creo?</h2>
+              <p className="large-text">
+                Trabajo con el diseño humano y la astrología como materia prima, no como creencia.
+                Lo traduzco en palabras simples, directas y orientadas a la vida cotidiana de tu
+                familia. No es necesario que &quot;creas en nada&quot;:
+              </p>
+              <div className="highlight-box">
+                Aquí sólo importa que las palabras reflejen la verdad relacional y la puedas usar.
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
 
-                {/* PARA QUIÉN ES / NO ES */}
-                <section className="section audience-section bg-light">
-                    <div className="container audience-grid">
-                        <AnimatedSection>
-                            <div className="audience-card for-who">
-                                <h3>Es para:</h3>
-                                <ul>
-                                    <li>
-                                        Familias que sienten amor, pero fatiga, confusión o desgaste por no saber cómo
-                                        engranar sus diferencias.
-                                    </li>
-                                    <li>
-                                        Padres que quieren dar estructura y dirección, no solo apagar fuegos
-                                        emocionales.
-                                    </li>
-                                    <li>
-                                        Madres y padres preocupados por formar vínculos sanos y carácter sólido, no sólo
-                                        evitar broncas.
-                                    </li>
-                                </ul>
-                            </div>
-                        </AnimatedSection>
+        {/* PARA QUIÉN ES / NO ES */}
+        <section className="section audience-section bg-light">
+          <div className="container audience-grid">
+            <AnimatedSection>
+              <div className="audience-card for-who">
+                <h3>Es para:</h3>
+                <ul>
+                  <li>
+                    Familias que sienten amor, pero fatiga, confusión o desgaste por no saber cómo
+                    engranar sus diferencias.
+                  </li>
+                  <li>
+                    Padres que quieren dar estructura y dirección, no solo apagar fuegos
+                    emocionales.
+                  </li>
+                  <li>
+                    Madres y padres preocupados por formar vínculos sanos y carácter sólido, no sólo
+                    evitar broncas.
+                  </li>
+                </ul>
+              </div>
+            </AnimatedSection>
 
-                        <AnimatedSection delay={0.2}>
-                            <div className="audience-card not-for-who">
-                                <h3>NO es para:</h3>
-                                <ul>
-                                    <li>Si buscas sólo frases inspiradoras bonitas.</li>
-                                    <li>Si quieres un cambio inmediato sin compromiso.</li>
-                                    <li>Si prefieres seguir improvisando sobre la marcha.</li>
-                                </ul>
-                            </div>
-                        </AnimatedSection>
-                    </div>
-                </section>
+            <AnimatedSection delay={0.2}>
+              <div className="audience-card not-for-who">
+                <h3>NO es para:</h3>
+                <ul>
+                  <li>Si buscas sólo frases inspiradoras bonitas.</li>
+                  <li>Si quieres un cambio inmediato sin compromiso.</li>
+                  <li>Si prefieres seguir improvisando sobre la marcha.</li>
+                </ul>
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
 
-                {/* FINAL CTA & FORMATO */}
-                <section className="section final-cta-section">
-                    <div className="container">
-                        <AnimatedSection className="final-wrapper">
-                            <div className="format-box">
-                                <h3 className="format-title">Formato del Servicio</h3>
-                                <ul>
-                                    <li>Entrega digital, lista para usar, imprimir, leer y consultar.</li>
-                                    <li>
-                                        Pergaminos redactados para cada persona y para cada vínculo, de principio a fin.
-                                    </li>
-                                    <li>Es un sistema: todo encaja y se refuerza a lo largo del tiempo.</li>
-                                </ul>
-                            </div>
+        {/* FINAL CTA & FORMATO */}
+        <section className="section final-cta-section">
+          <div className="container">
+            <AnimatedSection className="final-wrapper">
+              <div className="format-box">
+                <h3 className="format-title">Formato del Servicio</h3>
+                <ul>
+                  <li>Entrega digital, lista para usar, imprimir, leer y consultar.</li>
+                  <li>
+                    Pergaminos redactados para cada persona y para cada vínculo, de principio a fin.
+                  </li>
+                  <li>Es un sistema: todo encaja y se refuerza a lo largo del tiempo.</li>
+                </ul>
+              </div>
 
-                            <div className="investment-box">
-                                <p className="value-prop">Libera a tu familia de:</p>
-                                <ul className="value-list">
-                                    <li>Años de peleas, malentendidos y confusión.</li>
-                                    <li>Terapias que no logran cambiar la dinámica de raíz.</li>
-                                    <li>El desgaste de intentar resolver todo a ciegas.</li>
-                                </ul>
-                                <button onClick={openBooking} className="btn btn-accent btn-large final-btn">
-                                    Quiero el sistema completo para mi familia
-                                </button>
-                            </div>
-                        </AnimatedSection>
-                    </div>
-                </section>
+              <div className="investment-box">
+                <p className="value-prop">Libera a tu familia de:</p>
+                <ul className="value-list">
+                  <li>Años de peleas, malentendidos y confusión.</li>
+                  <li>Terapias que no logran cambiar la dinámica de raíz.</li>
+                  <li>El desgaste de intentar resolver todo a ciegas.</li>
+                </ul>
+                <button onClick={openBooking} className="btn btn-accent btn-large final-btn">
+                  Quiero el sistema completo para mi familia
+                </button>
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
 
-                {/* FAQ SECTION */}
-                <AnimatedSection delay={0.2}>
-                    <GenericFAQ
-                        questions={faqHome}
-                        title="Dudas frecuentes sobre los Pergaminos"
-                        subtitle="Todo lo que necesitas saber antes de ordenar el sistema para tu hogar."
-                    />
-                </AnimatedSection>
+        {/* FAQ SECTION */}
+        <AnimatedSection delay={0.2}>
+          <GenericFAQ
+            questions={faqHome}
+            title="Dudas frecuentes sobre los Pergaminos"
+            subtitle="Todo lo que necesitas saber antes de ordenar el sistema para tu hogar."
+          />
+        </AnimatedSection>
 
-                {/* CIERRE */}
-                <section className="section closure-section">
-                    <div className="container">
-                        <AnimatedSection>
-                            <div className="closure-content">
-                                <p className="closure-p">
-                                    "Una familia alineada no tiene que esforzarse tanto para entenderse; solo necesita
-                                    verse y corresponderse desde la verdad de cada quien."
-                                </p>
-                                <p className="closure-sub">
-                                    Estos pergaminos son el principio real de ese nuevo orden.
-                                </p>
-                            </div>
-                        </AnimatedSection>
-                    </div>
-                </section>
-            </main>
+        {/* CIERRE */}
+        <section className="section closure-section">
+          <div className="container">
+            <AnimatedSection>
+              <div className="closure-content">
+                <p className="closure-p">
+                  &quot;Una familia alineada no tiene que esforzarse tanto para entenderse; solo necesita
+                  verse y corresponderse desde la verdad de cada quien.&quot;
+                </p>
+                <p className="closure-sub">
+                  Estos pergaminos son el principio real de ese nuevo orden.
+                </p>
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+      </main>
 
-            <style>{`
+      <style>{`
         .pergaminos-page {
           background-color: var(--bg-color);
           min-height: 100vh;
@@ -743,8 +743,8 @@ const PergaminosPage = () => {
         }
 }
       `}</style>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default PergaminosPage;

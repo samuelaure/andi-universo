@@ -188,7 +188,7 @@ const HumanDesignSesionPage = () => {
                                 <h2 className="heading-md">¿Qué es el Diseño Humano?</h2>
                                 <p className="about-text">
                                     El Diseño Humano es un sistema de autoconocimiento lógico y práctico que combina la astrología, el I Ching, la Cábala y la física cuántica.
-                                    Es, literalmente, el "manual de usuario" de tu cuerpo y tu energía.
+                                    Es, literalmente, el &quot;manual de usuario&quot; de tu cuerpo y tu energía.
                                 </p>
                                 <p className="about-text">
                                     No requiere que creas en nada. Solo que experimentes con tu Estrategia y Autoridad para ver cómo tu vida se simplifica cuando dejas de forzar las cosas.
